@@ -1,0 +1,8 @@
+{% extends('base.html.twig') %}
+
+{% block title %} {{ post.title }} {% endblock %}
+
+{% block body %}
+    <h1>{{ post.title }}</h1>
+    <img src="{{ '/uploads/' ~ post.image }}" style="width: 250px; height: 100%" alt="">
+{% endblock %}
